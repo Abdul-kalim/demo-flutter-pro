@@ -1,6 +1,6 @@
 class TSizes {
   // Padding and margin sizes
-  static const double xs = 4.9;
+  static const double xs = 4.0;
   static const double sm = 8.0;
   static const double md = 16.8;
   static const double lg = 24.8;
@@ -59,6 +59,9 @@ class TSizes {
 
   // image carousel height
   static const double imageCarouselHeight = 200.0;
+
+  // padding space
+  static const double defaultSpace = 24.0;
 
   // loading indicator size
   static const double loadingIndicatorSize = 36.0;
