@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 class THelperFunctions {
-  static Color ? getColor(String value) {
+  static Color? getColor(String value) {
     if (value == 'Green') {
       return Colors.green;
     } else if (value == 'Green') {
@@ -22,18 +22,18 @@ class THelperFunctions {
       return Colors.black;
     } else if (value == 'White') {
       return Colors.white;
+    } else if (value == 'Yellow') {
+      return Colors.yellow;
+    } else if (value == 'Orange') {
+      return Colors.orange;
     } else if (value == 'Brown') {
       return Colors.brown;
-    }
-    // more color
-    // is there
-
-    else if(value == 'Teal'){
-    return Colors.teal;
-    }else if(value == 'Indigo'){
-    return Colors.indigo;
-    }else{
-    return null;
+    } else if (value == 'Teal') {
+      return Colors.teal;
+    } else if (value == 'Indigo') {
+      return Colors.indigo;
+    } else {
+      return null;
     }
   }
 
@@ -77,29 +77,19 @@ class THelperFunctions {
   }
 
   static bool isDarkMode(BuildContext context) {
-    return Theme
-        .of(context)
-        .brightness == Brightness.dark;
+    return Theme.of(context).brightness == Brightness.dark;
   }
 
   static Size screenSize() {
-    return MediaQuery
-        .of(Get.context!)
-        .size;
+    return MediaQuery.of(Get.context!).size;
   }
 
   static double screenHeight() {
-    return MediaQuery
-        .of(Get.context!)
-        .size
-        .height;
+    return MediaQuery.of(Get.context!).size.height;
   }
 
   static double screenWidth() {
-    return MediaQuery
-        .of(Get.context!)
-        .size
-        .width;
+    return MediaQuery.of(Get.context!).size.width;
   }
 
   static String getFormattedDate(DateTime date,
