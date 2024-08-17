@@ -18,12 +18,13 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// onboarding controller to handle logic
     final controller = Get.put(OnBoardingController());
 
     return Scaffold(
       body: Stack(
         children: [
-          // horizontal Scrollable pages
+          /// horizontal Scrollable pages
           PageView(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
@@ -49,10 +50,10 @@ class OnBoardingScreen extends StatelessWidget {
           // skip button
           const OnBoardingSkip(),
 
-          // dot navigation smoothpageindicator
+          /// dot navigation smoothpageindicator
           const OnBoardingDotNavigation(),
 
-          // circular button
+          /// circular button
           const OnBoardingNextButton(),
         ],
       ),
