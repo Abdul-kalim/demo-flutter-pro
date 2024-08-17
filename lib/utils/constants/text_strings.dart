@@ -1,5 +1,12 @@
 class TTexts {
 //   global texts
+static const String and = "and";
+static const String skip = "Skip";
+static const String done = "Done";
+static const String submit = "Submit";
+static const String appName = "T-Store";
+static const String tContinue = "Continue";
+
 
 // onboarding texts
   static const String onBoardingTitle1 = "Choose your product";
@@ -16,6 +23,7 @@ class TTexts {
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Taimoor Sikander";
 
+  // authentication form text
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String email = "E-Mail";
